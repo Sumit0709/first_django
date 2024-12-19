@@ -1,0 +1,11 @@
+<h1>{{ question.question_text }}</h1>
+
+{% if choices %}
+<ul>
+{% for choice in choices %}
+    <li>{{ choice.choice_text }}</li>
+{% endfor %}
+</ul>
+{% else %}
+    <p>No choices are available.</p>
+{% endif %}
